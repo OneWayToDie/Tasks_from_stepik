@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 double Zadacha_433(int studenti, int ballbI);
@@ -18,25 +18,25 @@ void main()
 {
 	setlocale(LC_ALL, "");
 
-	int studenti; cout << " Ââåäèòå êîëè÷åñòâî ñòóäåíòîâ: "; cin >> studenti;
-	int ballbI; cout << "Áàëëû ñòóäåíòà n: "; cin >> ballbI;
+	int studenti; cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð¾Ð²: "; cin >> studenti;
+	int ballbI; cout << "Ð‘Ð°Ð»Ð»Ñ‹ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð° n: "; cin >> ballbI;
 	Zadacha_433(studenti, ballbI); cout << "\n\n";
 
-	int a; cout << "Íà÷àëüíàÿ òî÷êà: "; cin >> a;
-	int b; cout << "Êîíå÷íàÿ òî÷êà: "; cin >> b;
+	int a; cout << "ÐÐ°Ñ‡Ð°Ð»ÑŒÐ½Ð°Ñ Ñ‚Ð¾Ñ‡ÐºÐ°: "; cin >> a;
+	int b; cout << "ÐšÐ¾Ð½ÐµÑ‡Ð½Ð°Ñ Ñ‚Ð¾Ñ‡ÐºÐ°: "; cin >> b;
 	Zadacha_461(a, b); cout << "\n\n";
 
-	cout << "Âûâîä ýòîãî îòðåçêà â îáðàòíóþ ñòîðîíó: " << endl;
+	cout << "Ð’Ñ‹Ð²Ð¾Ð´ ÑÑ‚Ð¾Ð³Ð¾ Ð¾Ñ‚Ñ€ÐµÐ·ÐºÐ° Ð² Ð¾Ð±Ñ€Ð°Ñ‚Ð½ÑƒÑŽ ÑÑ‚Ð¾Ñ€Ð¾Ð½Ñƒ: " << endl;
 	Zadacha_462(a, b); cout << "\n\n";
 
-	int stepenb; cout << "×èñëî âîçâåä¸ííîå â êâàäðàò: "; cin >> stepenb;
+	int stepenb; cout << "Ð§Ð¸ÑÐ»Ð¾ Ð²Ð¾Ð·Ð²ÐµÐ´Ñ‘Ð½Ð½Ð¾Ðµ Ð² ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚: "; cin >> stepenb;
 	Zadacha_463(stepenb); cout << "\n\n";
 
-	int chislo; cout << "Òàáëèöà óìíîæåíèÿ äëÿ çàäàííîãî ÷èñëà: "; cin >> chislo;
-	int predel; cout << "Ïðåäåë, äî êîòîðîãî íóæíî ïåðåìíîæàòü: "; cin >> predel;
+	int chislo; cout << "Ð¢Ð°Ð±Ð»Ð¸Ñ†Ð° ÑƒÐ¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ñ Ð´Ð»Ñ Ð·Ð°Ð´Ð°Ð½Ð½Ð¾Ð³Ð¾ Ñ‡Ð¸ÑÐ»Ð°: "; cin >> chislo;
+	int predel; cout << "ÐŸÑ€ÐµÐ´ÐµÐ», Ð´Ð¾ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ Ð½ÑƒÐ¶Ð½Ð¾ Ð¿ÐµÑ€ÐµÐ¼Ð½Ð¾Ð¶Ð°Ñ‚ÑŒ: "; cin >> predel;
 	Zadacha_464(chislo, predel); cout << "\n\n";
 
-	int x; cout << "×èñëî X: "; cin >> x;
+	int x; cout << "Ð§Ð¸ÑÐ»Ð¾ X: "; cin >> x;
 	Zadacha_465(x); cout << "\n\n";
 
 	const int nomer = 10; 
@@ -57,13 +57,13 @@ double Zadacha_433(int studenti, int ballbI)
 	double AVG;
 	for (int i = 1; i < studenti; i++)
 	{
-		cout << "Áàëëû ñòóäåíòà n: "; cin >> ballbI;
+		cout << "Ð‘Ð°Ð»Ð»Ñ‹ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð° n: "; cin >> ballbI;
 
 		sum = sum + ballbI;
 	}
 	
 	AVG = sum / studenti;
-	cout << "Ñðåäíèé áàëë - " << AVG << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½Ð¸Ð¹ Ð±Ð°Ð»Ð» - " << AVG << endl;
 	return ballbI;
 }
 int Zadacha_461(int a, int b)
@@ -90,7 +90,7 @@ int Zadacha_462(int a, int b)
 	}
 	else
 	{ 
-		cout << "Íåâåðíîå óñëîâèå";
+		cout << "ÐÐµÐ²ÐµÑ€Ð½Ð¾Ðµ ÑƒÑÐ»Ð¾Ð²Ð¸Ðµ";
 	}
 	return a;
 }
@@ -127,7 +127,7 @@ int Zadacha_465(int x)
 			cnt++;
 		}
 	}
-	cout << "Êîëè÷åñòâî íàòóðàëüíûõ äåëèòåëåé ÷èñëà X: " << cnt;
+	cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð½Ð°Ñ‚ÑƒÑ€Ð°Ð»ÑŒÐ½Ñ‹Ñ… Ð´ÐµÐ»Ð¸Ñ‚ÐµÐ»ÐµÐ¹ Ñ‡Ð¸ÑÐ»Ð° X: " << cnt;
 	return cnt;
 }
 int Artur_and_stradania(int arr[], const int nomer)
@@ -158,7 +158,7 @@ int Artur_and_stradania(int arr[], const int nomer)
 }
 int Print_massive_vvod(int arr[], int nomer)
 {
-	cout << "Ââåäèòå ìàññèâ: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°ÑÑÐ¸Ð²: ";
 	for (int i = 0; i < nomer; i++)
 	{
 		 cin >> arr[i];
@@ -188,9 +188,9 @@ int Artur_and_termometr(int arr[], const int t)
 			max = arr[i];
 		}
 	}
-	cout << "Ìèíèìàëüíàÿ òåìïåðàòóðà òåðìîìåòðà: " << min << "\n";
-	cout << "Ìàêñèìàëüíàÿ òåìïåðàòóðà òåðìîìåòðà: " << max << "\n";
-	cout << "Ñðåäíÿÿ òåìïåðàòóðà:" << sum/cnt << "\n";
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð° Ñ‚ÐµÑ€Ð¼Ð¾Ð¼ÐµÑ‚Ñ€Ð°: " << min << "\n";
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð° Ñ‚ÐµÑ€Ð¼Ð¾Ð¼ÐµÑ‚Ñ€Ð°: " << max << "\n";
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÑÑ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð°:" << sum/cnt << "\n";
 	return t;
 }
 void FillRand(int arr[], const int n, int MinRand, int MaxRand)
@@ -202,7 +202,7 @@ void FillRand(int arr[], const int n, int MinRand, int MaxRand)
 }
 int Print_massive_random(int arr[], int nomer)
 {
-	cout << "Çàïîëíåííûé ìàññèâ: ";
+	cout << "Ð—Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð²: ";
 	for (int i = 0; i < nomer; i++)
 	{
 		cout << arr[i] << " ";
