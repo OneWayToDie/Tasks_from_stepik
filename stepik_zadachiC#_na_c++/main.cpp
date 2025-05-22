@@ -9,9 +9,9 @@ int Zadacha_464(int chislo, int predel);
 int Zadacha_465(int x);
 int Artur_and_stradania(int arr[], const int nomer);
 int Print_massive_vvod(int arr[], int nomer);
-int Artur_and_termometr(int arr[], const int t);
-void FillRand(int arr[], const int n, int MinRand = -500, int MaxRand = 500);
-int Print_massive_random(int arr[], int nomer);
+double Artur_and_termometr(double arr[], const int t);
+void FillRand_double(double arr[], const int n, int MinRand = -500, int MaxRand = 500);
+double Print_massive_random(double arr[], int nomer);
 
 
 void main()
@@ -45,8 +45,8 @@ void main()
 	Artur_and_stradania(arr, nomer); cout << "\n\n";
 
 	const int t = 5;
-	int brr[t];
-	FillRand(brr, t);
+	double brr[t];
+	FillRand_double(brr, t);
 	Print_massive_random(brr, t);
 	Artur_and_termometr(brr, t);
 }
@@ -165,9 +165,9 @@ int Print_massive_vvod(int arr[], int nomer)
 	}
 	return nomer;
 }
-int Artur_and_termometr(int arr[], const int t)
+double Artur_and_termometr(double arr[], const int t)
 {
-	int sum = 0;
+	double sum = 0;
 	int min = arr[0];
 	int max = arr[0];
 	int cnt = 0;
@@ -193,14 +193,7 @@ int Artur_and_termometr(int arr[], const int t)
 	cout << "Средняя температура:" << sum/cnt << "\n";
 	return t;
 }
-void FillRand(int arr[], const int n, int MinRand, int MaxRand)
-{
-	for (int i = 0; i < n; i++)
-	{
-		arr[i] = rand() % (MaxRand - MinRand) + MinRand;
-	}
-}
-int Print_massive_random(int arr[], int nomer)
+double Print_massive_random(double arr[], int nomer)
 {
 	cout << "Заполненный массив: ";
 	for (int i = 0; i < nomer; i++)
@@ -209,4 +202,11 @@ int Print_massive_random(int arr[], int nomer)
 	}
 	cout << endl;
 	return nomer;
+}
+void FillRand_double(double arr[], const int n, int MinRand, int MaxRand)
+{
+	for (int i = 0; i < n; i++)
+	{
+		arr[i] = rand() % (MaxRand - MinRand) + MinRand;
+	}
 }
