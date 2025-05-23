@@ -16,11 +16,13 @@ void FillRand_int(int arr[], const int n, int MinRand = 0, int MaxRand = 9);
 double Print_massive_random_double(double arr[], int nomer);
 int Print_massive_random_int(int arr[], int nomer);
 int Analiz(int arr[], const int kolichestvo_chisel);
+int Intersting_number(int pervoe_sostavnoe, int vtoroe_sostavnoe);
 
 
 void main()
 {
 	setlocale(LC_ALL, "");
+
 
 	int studenti; cout << " Введите количество студентов: "; cin >> studenti;
 	int ballbI; cout << "Баллы студента n: "; cin >> ballbI;
@@ -66,6 +68,12 @@ void main()
 	FillRand_int(arr, kolichestvo_chisel);
 	Print_massive_vvod(arr, kolichestvo_chisel);
 	Analiz(arr, kolichestvo_chisel); //https://stepik.org/lesson/87925/step/8?unit=64284
+
+	int pervoe_sostavnoe = 0;
+	int vtoroe_sostavnoe = 0;
+	Intersting_number(pervoe_sostavnoe, vtoroe_sostavnoe); //https://stepik.org/lesson/87925/step/9?unit=64284
+
+
 }
 
 double Zadacha_433(int studenti, int ballbI)
@@ -268,11 +276,31 @@ int Analiz(int arr[], const int kolichestvo_chisel)
 	}
 	if (cnt > 0)
 	{
-		cout << cnt;
+		cout << cnt << endl;
 	}
 	else
 	{
-		cout << "empty";
+		cout << "empty" << endl;
 	}
 	return kolichestvo_chisel;
+}
+int Intersting_number(int pervoe_sostavnoe, int vtoroe_sostavnoe)
+{
+	pervoe_sostavnoe = 10;
+	for (int i = 1; i < 10; i++)
+	{
+		pervoe_sostavnoe;
+		for (int j = 0; j < 10; j++)
+		{
+			vtoroe_sostavnoe = pervoe_sostavnoe + j;
+			if (vtoroe_sostavnoe == i * j * 2)
+			{
+				cout << "число - " << vtoroe_sostavnoe << endl;
+			}
+		}
+		pervoe_sostavnoe += 10;
+
+	}
+	cout << endl;
+	return vtoroe_sostavnoe;
 }
