@@ -17,7 +17,7 @@ double Print_massive_random_double(double arr[], int nomer);
 int Print_massive_random_int(int arr[], int nomer);
 int Analiz(int arr[], const int kolichestvo_chisel);
 int Intersting_number(int pervoe_sostavnoe, int vtoroe_sostavnoe);
-
+int Summa(int sum);
 
 void main()
 {
@@ -69,11 +69,13 @@ void main()
 	Print_massive_vvod(arr, kolichestvo_chisel);
 	Analiz(arr, kolichestvo_chisel); //https://stepik.org/lesson/87925/step/8?unit=64284
 
+
 	int pervoe_sostavnoe = 0;
 	int vtoroe_sostavnoe = 0;
 	Intersting_number(pervoe_sostavnoe, vtoroe_sostavnoe); //https://stepik.org/lesson/87925/step/9?unit=64284
 
-
+	int sum = 0;
+	Summa(sum);
 }
 
 double Zadacha_433(int studenti, int ballbI)
@@ -282,6 +284,7 @@ int Analiz(int arr[], const int kolichestvo_chisel)
 	{
 		cout << "empty" << endl;
 	}
+	cout << "\n";
 	return kolichestvo_chisel;
 }
 int Intersting_number(int pervoe_sostavnoe, int vtoroe_sostavnoe)
@@ -303,4 +306,20 @@ int Intersting_number(int pervoe_sostavnoe, int vtoroe_sostavnoe)
 	}
 	cout << endl;
 	return vtoroe_sostavnoe;
+}
+int Summa(int sum)
+{
+	int max;
+	int znachenie;
+
+	cout << "Количество вводимых значений: "; cin >> max; 
+	cout << endl;
+	for (int i = 0; i < max; i++)
+	{
+		cout << "Введите значение: "; cin >> znachenie;
+		sum = sum + znachenie;
+	}
+	cout << "\n";
+	cout << "Сумма введённых значений - " << sum;
+	return sum;
 }
