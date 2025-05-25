@@ -1,10 +1,10 @@
-#include"stdafx.h"
+ï»¿#include"stdafx.h"
 using namespace std;
 
 
 int Print_massive_vvod(int arr[], int nomer)
 {
-	cout << "Ââåäèòå ìàññèâ: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°ÑÑÐ¸Ð²: ";
 	for (int i = 0; i < nomer; i++)
 	{
 		cin >> arr[i];
@@ -13,7 +13,7 @@ int Print_massive_vvod(int arr[], int nomer)
 }
 double Print_massive_random_double(double arr[], int nomer)
 {
-	cout << "Çàïîëíåííûé ìàññèâ: ";
+	cout << "Ð—Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð²: ";
 	for (int i = 0; i < nomer; i++)
 	{
 		cout << arr[i] << " ";
@@ -23,7 +23,7 @@ double Print_massive_random_double(double arr[], int nomer)
 }
 int Print_massive_random_int(int arr[], int nomer)
 {
-	cout << "Çàïîëíåííûé ìàññèâ: ";
+	cout << "Ð—Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð²: ";
 	for (int i = 0; i < nomer; i++)
 	{
 		cout << arr[i] << " ";

@@ -1,4 +1,4 @@
-#include"stdafx.h"
+ï»¿#include"stdafx.h"
 
 using namespace std;
 
@@ -7,14 +7,14 @@ int Summa(int sum)
 	int max;
 	int znachenie;
 
-	cout << "Êîëè÷åñòâî ââîäèìûõ çíà÷åíèé: "; cin >> max;
+	cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð²Ð²Ð¾Ð´Ð¸Ð¼Ñ‹Ñ… Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ð¹: "; cin >> max;
 	cout << endl;
 	for (int i = 0; i < max; i++)
 	{
-		cout << "Ââåäèòå çíà÷åíèå: "; cin >> znachenie;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ: "; cin >> znachenie;
 		sum = sum + znachenie;
 	}
 	cout << "\n";
-	cout << "Ñóììà ââåä¸ííûõ çíà÷åíèé - " << sum;
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° Ð²Ð²ÐµÐ´Ñ‘Ð½Ð½Ñ‹Ñ… Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ð¹ - " << sum;
 	return sum;
 }

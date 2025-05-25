@@ -1,4 +1,4 @@
-#include"stdafx.h"
+ï»¿#include"stdafx.h"
 
 using namespace std;
 
@@ -8,13 +8,13 @@ double Zadacha_433(int studenti, int ballbI)
 	double AVG;
 	for (int i = 1; i < studenti; i++)
 	{
-		cout << "Áàëëû ñòóäåíòà n: "; cin >> ballbI;
+		cout << "Ð‘Ð°Ð»Ð»Ñ‹ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð° n: "; cin >> ballbI;
 
 		sum = sum + ballbI;
 	}
 
 	AVG = sum / studenti;
-	cout << "Ñðåäíèé áàëë - " << AVG << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½Ð¸Ð¹ Ð±Ð°Ð»Ð» - " << AVG << endl;
 	return ballbI;
 }
 int Zadacha_461(int a, int b)
@@ -41,7 +41,7 @@ int Zadacha_462(int a, int b)
 	}
 	else
 	{
-		cout << "Íåâåðíîå óñëîâèå";
+		cout << "ÐÐµÐ²ÐµÑ€Ð½Ð¾Ðµ ÑƒÑÐ»Ð¾Ð²Ð¸Ðµ";
 	}
 	return a;
 }
@@ -78,7 +78,7 @@ int Zadacha_465(int x)
 			cnt++;
 		}
 	}
-	cout << "Êîëè÷åñòâî íàòóðàëüíûõ äåëèòåëåé ÷èñëà X: " << cnt;
+	cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð½Ð°Ñ‚ÑƒÑ€Ð°Ð»ÑŒÐ½Ñ‹Ñ… Ð´ÐµÐ»Ð¸Ñ‚ÐµÐ»ÐµÐ¹ Ñ‡Ð¸ÑÐ»Ð° X: " << cnt;
 	return cnt;
 }
 int Zadacha_466(int n, int c, int d)
@@ -87,7 +87,7 @@ int Zadacha_466(int n, int c, int d)
 	{
 		if (i % c == 0 && i % d != 0)
 		{
-			cout << "×èñëî êðàòíîå c, íî íå êðàòíîå d - " << i << endl;
+			cout << "Ð§Ð¸ÑÐ»Ð¾ ÐºÑ€Ð°Ñ‚Ð½Ð¾Ðµ c, Ð½Ð¾ Ð½Ðµ ÐºÑ€Ð°Ñ‚Ð½Ð¾Ðµ d - " << i << endl;
 		}
 	}
 	return d;
@@ -141,9 +141,9 @@ double Artur_and_termometr(double arr[], const int t)
 			max = arr[i];
 		}
 	}
-	cout << "Ìèíèìàëüíàÿ òåìïåðàòóðà òåðìîìåòðà: " << min << "\n";
-	cout << "Ìàêñèìàëüíàÿ òåìïåðàòóðà òåðìîìåòðà: " << max << "\n";
-	cout << "Ñðåäíÿÿ òåìïåðàòóðà:" << sum / cnt << "\n";
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð° Ñ‚ÐµÑ€Ð¼Ð¾Ð¼ÐµÑ‚Ñ€Ð°: " << min << "\n";
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð°Ñ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð° Ñ‚ÐµÑ€Ð¼Ð¾Ð¼ÐµÑ‚Ñ€Ð°: " << max << "\n";
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÑÑ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ð°:" << sum / cnt << "\n";
 	return t;
 }
 void FillRand_double(double arr[], const int n, int MinRand, int MaxRand)
@@ -193,7 +193,7 @@ int Intersting_number(int pervoe_sostavnoe, int vtoroe_sostavnoe)
 			vtoroe_sostavnoe = pervoe_sostavnoe + j;
 			if (vtoroe_sostavnoe == i * j * 2)
 			{
-				cout << "÷èñëî - " << vtoroe_sostavnoe << endl;
+				cout << "Ñ‡Ð¸ÑÐ»Ð¾ - " << vtoroe_sostavnoe << endl;
 			}
 		}
 		pervoe_sostavnoe += 10;
