@@ -123,6 +123,12 @@ void main()
 		int kolichestvo = 0;
 		Artur_and_Money(stroka, sum, nominal_monetbi, kolichestvo);//https://stepik.org/lesson/87132/step/14?unit=63522
 	}
+	if (NUMBER == 17)
+	{
+		int chislo; cout << "Введите число: "; cin >> chislo;
+		Proizvedenie_chetnbix_chisel(chislo);
+	}
+
 }
 
 

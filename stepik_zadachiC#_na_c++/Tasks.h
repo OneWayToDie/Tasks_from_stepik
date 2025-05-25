@@ -17,3 +17,4 @@ int Summa_uslovie(int sum, int  kolichestvo);
 int Number_of_numbers(int chislo, int kolichestvo);
 int Nuli(int cnt, int kolichestvo);
 int Artur_and_Money(int stroka, int sum, int nominal_monetbi, int kolichestvo);
+int Proizvedenie_chetnbix_chisel(int chislo);

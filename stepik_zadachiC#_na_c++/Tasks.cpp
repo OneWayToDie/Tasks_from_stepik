@@ -275,3 +275,17 @@ int Artur_and_Money(int stroka, int sum, int nominal_monetbi, int kolichestvo)
 	cout << "Общая сумма монет - " << all_sum << endl;
 	return all_sum;
 }
+int Proizvedenie_chetnbix_chisel(int chislo)
+{
+	int sum = 1;
+	for (int i = 1; i <= chislo; i ++)
+	{
+		if (i % 2 == 0)
+		{
+			sum = i * sum;
+		}
+	}
+	cout << "Вывод суммы - " << sum << endl;
+	return sum;
+}
+
