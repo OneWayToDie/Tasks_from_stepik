@@ -14,3 +14,4 @@ void FillRand_double(double arr[], const int n, int MinRand = -500, int MaxRand 
 void FillRand_int(int arr[], const int n, int MinRand = 0, int MaxRand = 9);
 int Analiz(int arr[], const int kolichestvo_chisel);
 int Intersting_number(int pervoe_sostavnoe, int vtoroe_sostavnoe);
+int Summa(int sum);

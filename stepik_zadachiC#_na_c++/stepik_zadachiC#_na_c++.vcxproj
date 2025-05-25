@@ -130,13 +130,11 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Print.cpp" />
-    <ClCompile Include="sum.cpp" />
     <ClCompile Include="Tasks.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Print.h" />
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="sum.h" />
     <ClInclude Include="Tasks.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
