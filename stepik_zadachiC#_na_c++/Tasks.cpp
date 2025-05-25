@@ -146,21 +146,6 @@ double Artur_and_termometr(double arr[], const int t)
 	cout << "Средняя температура:" << sum / cnt << "\n";
 	return t;
 }
-void FillRand_double(double arr[], const int n, int MinRand, int MaxRand)
-{
-	for (int i = 0; i < n; i++)
-	{
-		arr[i] = rand() % (MaxRand - MinRand) + MinRand;
-	}
-}
-void FillRand_int(int arr[], const int n, int MinRand, int MaxRand)
-{
-	for (int i = 0; i < n; i++)
-	{
-		arr[i] = rand() % (MaxRand - MinRand) + MinRand;
-
-	}
-}
 int Analiz(int arr[], const int kolichestvo_chisel)
 {
 	int cnt = 0;
@@ -215,6 +200,34 @@ int Summa(int sum)
 		sum = sum + znachenie;
 	}
 	cout << "\n";
-	cout << "Сумма введённых значений - " << sum;
+	cout << "Сумма введённых значений - " << sum << "\n";
 	return sum;
+}
+int Summa_uslovie(int sum, int kolichestvo)
+{
+	int chislo;
+	for (int i = 0; i < kolichestvo; i++)
+	{
+		cout << "Введите число: "; cin >> chislo;
+		if (chislo % 2 == 0 && chislo % 3 != 0)
+		{
+			sum = sum + chislo;
+		}
+	}
+	cout << "Сумма чисел = " << sum << "\n";
+	return sum;
+}
+int Number_of_numbers(int chislo, int kolichestvo)
+{
+	int cnt = 0;
+	for (int i = 0; i < kolichestvo; i++)
+	{
+		cout << "Введите число: "; cin >> chislo;
+		if (chislo % 10 == 0 || chislo == 0)
+		{
+			cnt++;
+		}
+	}
+	cout << "Количество чисел оканчивающихся на 0 = " << cnt << endl;
+	return cnt;
 }
