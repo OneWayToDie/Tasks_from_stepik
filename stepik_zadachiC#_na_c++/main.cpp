@@ -103,15 +103,26 @@ void main()
 	{
 		int chislo = 0;
 		int kolichestvo;
-		cout << "Введите необходимое для вас количество чисел: "; cin >> kolichestvo;
+		cout << "Введите необходимое вам количество чисел: "; cin >> kolichestvo;
 		cout << "\n";
 		Number_of_numbers(chislo, kolichestvo); //https://stepik.org/lesson/87132/step/12?unit=63522 
 	}
 	if (NUMBER == 15)
 	{
-
+		int kolichestvo;
+		int cnt = 0;
+		cout << "Введите необходимое вам количество чисел: "; cin >> kolichestvo;
+		cout << "\n";
+		Nuli(cnt, kolichestvo); //https://stepik.org/lesson/87132/step/13?unit=63522
 	}
-
+	if (NUMBER == 16)
+	{
+		int stroka = 8;
+		int sum = 0;
+		int nominal_monetbi = 0;
+		int kolichestvo = 0;
+		Artur_and_Money(stroka, sum, nominal_monetbi, kolichestvo);//https://stepik.org/lesson/87132/step/14?unit=63522
+	}
 }
 
 

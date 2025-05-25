@@ -231,3 +231,47 @@ int Number_of_numbers(int chislo, int kolichestvo)
 	cout << "Количество чисел оканчивающихся на 0 = " << cnt << endl;
 	return cnt;
 }
+int Nuli(int cnt, int kolichestvo)
+{
+	int chislo; 
+	for (int i = 0; i < kolichestvo; i++)
+	{
+		cout << "Введите число: "; cin >> chislo;
+		if (chislo == 0)
+		{
+			cnt++;
+		}
+	}
+	if (cnt > 0)
+	{
+		cout << "YES, Нулей введено - " << cnt << endl;
+	}
+	if (cnt == 0)
+	{
+		cout << "NO" << endl;
+	}
+	return cnt;
+}
+int Artur_and_Money(int stroka, int sum, int nominal_monetbi, int kolichestvo)
+{
+	stroka = 8;
+	int all_sum = 0;
+	for (int i = 1; i < stroka*2; i++)
+	{
+			if (i / 2 % 2 == 0)
+			{
+				cout << "Номинал монеты - "; cin >> nominal_monetbi;
+				i++;
+			}
+			if (i / 2 % 2 == 1)
+			{
+				cout << "Количество монет номинала " << nominal_monetbi << " руб. - "; cin >> kolichestvo;
+				i++;
+				sum = nominal_monetbi * kolichestvo;
+				sum = sum + all_sum;
+			}
+			all_sum = sum;
+	}
+	cout << "Общая сумма монет - " << all_sum << endl;
+	return all_sum;
+}
