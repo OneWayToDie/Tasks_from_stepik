@@ -14,4 +14,4 @@ int Analiz(int arr[], const int kolichestvo_chisel);
 int Intersting_number(int pervoe_sostavnoe, int vtoroe_sostavnoe);
 int Summa(int sum);
 int Summa_uslovie(int sum, int  kolichestvo);
-int Number_of_numbers(int chislo, int kolichestvo);
+int Number_of_numbers(int Chislo, int Kolichestvo);

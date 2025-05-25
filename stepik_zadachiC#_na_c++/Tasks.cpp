@@ -217,13 +217,13 @@ int Summa_uslovie(int sum, int kolichestvo)
 	cout << "Сумма чисел = " << sum << "\n";
 	return sum;
 }
-int Number_of_numbers(int chislo, int kolichestvo)
+int Number_of_numbers(int Chislo, int Kolichestvo)
 {
 	int cnt = 0;
-	for (int i = 0; i < kolichestvo; i++)
+	for (int i = 0; i < Kolichestvo; i++)
 	{
-		cout << "Введите число: "; cin >> chislo;
-		if (chislo % 10 == 0 || chislo == 0)
+		cout << "Введите число: "; cin >> Chislo;
+		if (Chislo % 10 == 0 || Chislo == 0)
 		{
 			cnt++;
 		}
