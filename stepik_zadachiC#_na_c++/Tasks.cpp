@@ -307,3 +307,17 @@ int Proizvedenie_na_otrezke(int celb_1, int celb_2)
 		return proizvedenie;
 	}
 }
+int Proizvedenie_7(int celb_1, int celb_2)
+{
+	int proizvedenie = 1;
+	for (int i = celb_1; i <= celb_2; i++)
+	{
+		if (i % 10 == 7 || i == 7)
+		{
+			cout << "Число для перемножения - " << i << endl;
+			proizvedenie = proizvedenie * i;
+		}
+	}
+	cout << "Произведение чисел оканчивающихся на 7 - " << proizvedenie << endl;
+	return celb_1;
+}

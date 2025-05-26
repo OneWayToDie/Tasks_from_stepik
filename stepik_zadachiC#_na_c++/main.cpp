@@ -134,6 +134,12 @@ void main()
 		int celb_2; cout << "Введите второе число: "; cin >> celb_2;
 		Proizvedenie_na_otrezke(celb_1, celb_2); //https://stepik.org/lesson/126880/step/4?unit=101078
 	}
+	if (NUMBER == 19)
+	{
+		int celb_1; cout << "Введите первое число: "; cin >> celb_1;
+		int celb_2; cout << "Введите второе число: "; cin >> celb_2;
+		Proizvedenie_7(celb_1, celb_2);
+	}
 
 }
 
