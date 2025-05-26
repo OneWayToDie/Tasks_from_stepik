@@ -288,4 +288,22 @@ int Proizvedenie_chetnbix_chisel(int chislo)
 	cout << "Вывод суммы - " << sum << endl;
 	return sum;
 }
+int Proizvedenie_na_otrezke(int celb_1, int celb_2)
+{
+	int proizvedenie;
+	if (celb_1 == celb_2)
+	{
+		cout << "Произведение чисел на отрезке = " << celb_1;
+	}
+	else
+	{
+		for (int i = celb_1 + 1; i <= celb_2; i++)
+		{
+			proizvedenie = celb_1 * i;
+			celb_1 = proizvedenie;
 
+		}
+		cout << "Произведение чисел на отрезке = " << proizvedenie << endl;
+		return proizvedenie;
+	}
+}

@@ -121,12 +121,18 @@ void main()
 		int sum = 0;
 		int nominal_monetbi = 0;
 		int kolichestvo = 0;
-		Artur_and_Money(stroka, sum, nominal_monetbi, kolichestvo);//https://stepik.org/lesson/87132/step/14?unit=63522
+		Artur_and_Money(stroka, sum, nominal_monetbi, kolichestvo); //https://stepik.org/lesson/87132/step/14?unit=63522
 	}
 	if (NUMBER == 17)
 	{
 		int chislo; cout << "Введите число: "; cin >> chislo;
-		Proizvedenie_chetnbix_chisel(chislo);
+		Proizvedenie_chetnbix_chisel(chislo); //https://stepik.org/lesson/126880/step/3?unit=101078
+	}
+	if (NUMBER == 18)
+	{
+		int celb_1; cout << "Введите первое число: "; cin >> celb_1;
+		int celb_2; cout << "Введите второе число: "; cin >> celb_2;
+		Proizvedenie_na_otrezke(celb_1, celb_2); //https://stepik.org/lesson/126880/step/4?unit=101078
 	}
 
 }
