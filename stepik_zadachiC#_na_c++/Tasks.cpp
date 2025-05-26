@@ -350,3 +350,15 @@ int Kratnostb(int chislo)
 	
 	
 }
+int Search(int arr[], const int nomer)
+{
+	for (int i = 0; i < nomer; i++)
+	{
+		if (i % 3 == 0)
+		{
+			cout << arr[i] << " ";
+		}
+	}
+	cout << endl;
+	return nomer;
+}

@@ -172,6 +172,17 @@ void main()
 		Kratnostb(chislo); //https://stepik.org/lesson/87340/step/4?unit=63720
 		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
 	}
+	if (NUMBER == 22)
+	{
+		int MinRand = 0;
+		int MaxRand = 100;
+		const int nomer = 10;
+		int arr[nomer];
+		FillRand_int(arr, nomer, MinRand, MaxRand);
+		Print_massive_random_int(arr, nomer);
+		Search(arr, nomer); //https://stepik.org/lesson/87057/step/7?unit=63453
+		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
+	}
 
 }
 
