@@ -352,6 +352,7 @@ int Kratnostb(int chislo)
 }
 int Search(int arr[], const int nomer)
 {
+	cout << "Вывод элементов массива, индексы которых кратны трём - ";
 	for (int i = 0; i < nomer; i++)
 	{
 		if (i % 3 == 0)
@@ -359,6 +360,47 @@ int Search(int arr[], const int nomer)
 			cout << arr[i] << " ";
 		}
 	}
+	cout << endl;
+	return nomer;
+}
+int Search_2(int arr[], int nomer)
+{
+	cout << "Элементы массива, кратные трём - ";
+	for (int i = 0; i < nomer; i++)
+	{
+		if (arr[i] % 3 == 0)
+		{
+			cout  << arr[i] << " ";
+		}
+	}
+	cout << endl;
+	return nomer;
+}
+int More_than_the_previous_one(int arr[], int nomer)
+{
+	int cnt = 0;
+	for (int i = 0; i < nomer; i++)
+	{
+		if (arr[i + 1] > arr[i])
+		{
+			cnt++;
+		}
+	}
+	
+	cout << "Количество элементов массива, больших предыдущего элемента - " << cnt << endl;
+	return nomer;
+}
+int Index(int arr[], int nomer)
+{
+	int min = arr[0];
+	for (int i = 0; i < nomer; i++)
+	{
+		if (arr[i] < min)
+		{
+			min = arr[i];
+		}
+	}
+	cout << min << " ";
 	cout << endl;
 	return nomer;
 }

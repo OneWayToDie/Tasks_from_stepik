@@ -183,7 +183,36 @@ void main()
 		Search(arr, nomer); //https://stepik.org/lesson/87057/step/7?unit=63453
 		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
 	}
-
+	if (NUMBER == 23)
+	{
+		int MinRand = 0;
+		int MaxRand = 100;
+		const int nomer = 7;
+		int arr[nomer];
+		FillRand_int(arr, nomer, MinRand, MaxRand);
+		Print_massive_random_int(arr, nomer);
+		Search_2(arr, nomer); //https://stepik.org/lesson/87057/step/8?unit=63453
+		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
+	}
+	if (NUMBER == 24)
+	{
+		const int nomer = 5;
+		int arr[nomer];
+		Print_massive_vvod(arr, nomer);
+		More_than_the_previous_one(arr, nomer); //https://stepik.org/lesson/87057/step/9?unit=63453
+		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
+	}
+	if (NUMBER == 25)
+	{
+		int MinRand = 0;
+		int MaxRand = 100;
+		const int nomer = 7;
+		int arr[nomer];
+		FillRand_int(arr, nomer, MinRand, MaxRand);
+		Print_massive_random_int(arr, nomer);
+		Index(arr, nomer); //https://stepik.org/lesson/106615/step/4?unit=81139
+		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
+	}
 }
 
 

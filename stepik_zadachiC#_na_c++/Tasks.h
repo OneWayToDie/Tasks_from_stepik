@@ -23,3 +23,6 @@ int Proizvedenie_7(int celb_1, int celb_2);
 int Delenie(int chislo);
 int Kratnostb(int chislo);
 int Search(int arr[], const int nomer);
+int Search_2(int arr[], int nomer);
+int More_than_the_previous_one(int arr[], int nomer);
+int Index(int arr[], int nomer);
