@@ -26,3 +26,4 @@ int Search(int arr[], const int nomer);
 int Search_2(int arr[], int nomer);
 int More_than_the_previous_one(int arr[], int nomer);
 int Index(int arr[], int nomer);
+int Umenbshenie_Arr(int arr[], int nomer);

@@ -213,6 +213,17 @@ void main()
 		Index(arr, nomer); //https://stepik.org/lesson/106615/step/4?unit=81139
 		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
 	}
+	if (NUMBER == 26)
+	{
+		int MinRand = 6;
+		int MaxRand = 100;
+		const int nomer = 7;
+		int arr[nomer];
+		FillRand_int(arr, nomer, MinRand, MaxRand);
+		Print_massive_random_int(arr, nomer);
+		Umenbshenie_Arr(arr, nomer); //https://stepik.org/lesson/106615/step/6?unit=81139
+		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
+	}
 }
 
 

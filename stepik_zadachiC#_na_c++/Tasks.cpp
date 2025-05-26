@@ -400,7 +400,28 @@ int Index(int arr[], int nomer)
 			min = arr[i];
 		}
 	}
-	cout << min << " ";
+	cout << min << endl;
+	return nomer;
+}
+int Umenbshenie_Arr(int arr[], int nomer)
+{
+	int min = arr[0];
+	for (int i = 0; i < nomer; i++)
+	{
+		if (arr[i] < min)
+		{
+			min = arr[i];
+		}
+		
+	}
+	cout << "массив, в котором все элементы массива уменьшены на минимальный элемент массива: ";
+	for (int i = 0; i < nomer; i++)
+	{
+		arr[min] = arr[i] - min;
+		cout << arr[min] << " ";
+	}
+
+	
 	cout << endl;
 	return nomer;
 }
