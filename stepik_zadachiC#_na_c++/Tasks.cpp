@@ -321,3 +321,32 @@ int Proizvedenie_7(int celb_1, int celb_2)
 	cout << "Произведение чисел оканчивающихся на 7 - " << proizvedenie << endl;
 	return celb_1;
 }
+int Delenie(int chislo)
+{
+	int cnt = 0;
+	while (chislo % 3 == 0)
+	{
+		chislo = chislo / 3;
+		cnt++;
+	}
+	cout << "Число делится на 3 нацело - " << cnt << endl;
+	return cnt;
+}
+int Kratnostb(int chislo)
+{
+	int kolichestvo;cout << "Введите количество чисел, нужное вам: "; cin >> kolichestvo;
+	int sum = 0;
+	for (int i = 0; i < kolichestvo; i++)
+	{
+		cout << "Введите числа: "; cin >> chislo;
+		if(chislo % 2 == 0 && chislo % 3 != 0)
+		{
+			sum = sum + chislo;
+		}
+	}
+	cout << "Сумма чисел равна = " << sum << endl;
+	return sum;
+
+	
+	
+}

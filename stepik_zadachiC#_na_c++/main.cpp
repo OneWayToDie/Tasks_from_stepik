@@ -159,6 +159,19 @@ void main()
 		Proizvedenie_7(celb_1, celb_2); //https://stepik.org/lesson/126880/step/5?unit=101078
 		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
 	}
+	if (NUMBER == 20)
+	{
+		int chislo; cout << "Введите число: "; cin >> chislo;
+		Delenie(chislo); //https://stepik.org/lesson/87339/step/8?unit=63719
+		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
+
+	}
+	if (NUMBER == 21)
+	{
+		int chislo = 0; 
+		Kratnostb(chislo); //https://stepik.org/lesson/87340/step/4?unit=63720
+		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
+	}
 
 }
 

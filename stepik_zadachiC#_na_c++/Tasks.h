@@ -20,3 +20,5 @@ int Artur_and_Money(int stroka, int sum, int nominal_monetbi, int kolichestvo);
 int Proizvedenie_chetnbix_chisel(int chislo);
 int Proizvedenie_na_otrezke(int celb_1, int celb_2);
 int Proizvedenie_7(int celb_1, int celb_2);
+int Delenie(int chislo);
+int Kratnostb(int chislo);
