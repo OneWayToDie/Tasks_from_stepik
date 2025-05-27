@@ -505,5 +505,22 @@ int Two_identical_elements_Arr(int arr[], int nomer)
 }
 int The_only_elements_are(int arr[], const int nomer)
 {
-
+	int cnt = 0;
+	for (int i = 0; i < nomer; i++)
+	{
+		for (int j = 0; j < nomer; j++)
+		{
+			if (arr[j] == arr[i])
+			{
+				cnt++;
+			}
+		}
+		if (cnt == 1)
+		{
+			cout << arr[i] << " ";
+		}
+		cnt = 0;
+	}
+	cout << endl;
+	return nomer;
 }

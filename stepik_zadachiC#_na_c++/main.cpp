@@ -263,7 +263,7 @@ void main()
 		Two_identical_elements_Arr(arr, nomer); //https://stepik.org/lesson/106612/step/3?unit=81136
 		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
 	}
-	if (NUMBER == 30)
+	if (NUMBER == 31)
 	{
 		int MinRand = 2;
 		int MaxRand = 25;
