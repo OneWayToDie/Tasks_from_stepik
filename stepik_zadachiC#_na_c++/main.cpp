@@ -224,6 +224,17 @@ void main()
 		Umenbshenie_Arr(arr, nomer); //https://stepik.org/lesson/106615/step/6?unit=81139
 		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
 	}
+	if (NUMBER == 27)
+	{
+		int MinRand = 2;
+		int MaxRand = 25;
+		const int nomer = 7;
+		int arr[nomer];
+		FillRand_int(arr, nomer, MinRand, MaxRand);
+		Print_massive_random_int(arr, nomer);
+		Raznostb_Arr(arr, nomer); //https://stepik.org/lesson/106615/step/8?unit=81139
+		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
+	}
 }
 
 

@@ -363,7 +363,7 @@ int Search(int arr[], const int nomer)
 	cout << endl;
 	return nomer;
 }
-int Search_2(int arr[], int nomer)
+int Search_2(int arr[], const int nomer)
 {
 	cout << "Элементы массива, кратные трём - ";
 	for (int i = 0; i < nomer; i++)
@@ -376,7 +376,7 @@ int Search_2(int arr[], int nomer)
 	cout << endl;
 	return nomer;
 }
-int More_than_the_previous_one(int arr[], int nomer)
+int More_than_the_previous_one(int arr[], const int nomer)
 {
 	int cnt = 0;
 	for (int i = 0; i < nomer; i++)
@@ -390,7 +390,7 @@ int More_than_the_previous_one(int arr[], int nomer)
 	cout << "Количество элементов массива, больших предыдущего элемента - " << cnt << endl;
 	return nomer;
 }
-int Index(int arr[], int nomer)
+int Index(int arr[], const int nomer)
 {
 	int min = arr[0];
 	for (int i = 0; i < nomer; i++)
@@ -400,10 +400,10 @@ int Index(int arr[], int nomer)
 			min = arr[i];
 		}
 	}
-	cout << min << endl;
+	cout << "Вывод индекса массива с минимальным значением: " << min << endl;
 	return nomer;
 }
-int Umenbshenie_Arr(int arr[], int nomer)
+int Umenbshenie_Arr(int arr[], const int nomer)
 {
 	int min = arr[0];
 	for (int i = 0; i < nomer; i++)
@@ -420,8 +420,32 @@ int Umenbshenie_Arr(int arr[], int nomer)
 		arr[min] = arr[i] - min;
 		cout << arr[min] << " ";
 	}
-
-	
 	cout << endl;
+	return nomer;
+}
+int Raznostb_Arr(int arr[], const int nomer)
+{
+	int raznostb;
+	int min = arr[0];
+	int max = arr[0];
+	int IndexMin;
+	int IndexMax;
+	for (int i = 0; i < nomer; i++)
+	{
+		if (arr[i] < min)
+		{
+			min = arr[i];
+			IndexMin = i;
+		}
+		if (arr[i] > max)
+		{
+			max = arr[i];
+			IndexMax = i;
+		}
+	}
+	cout << "Вывод индекса массива с минимальным значением: " << min << endl;
+	cout << "Вывод индекса массива с минимальным значением: " << max << endl;
+	raznostb = IndexMax - IndexMin;
+	cout << "Разность - " << raznostb << endl;
 	return nomer;
 }
