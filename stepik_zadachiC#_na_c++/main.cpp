@@ -235,6 +235,36 @@ void main()
 		Raznostb_Arr(arr, nomer); //https://stepik.org/lesson/106615/step/8?unit=81139
 		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
 	}
+	//if (NUMBER == 28)
+	//{
+	//	int MinRand = 2;
+	//	int MaxRand = 30;
+	//	const int nomer = 7;
+	//	int arr[nomer];
+	//	Print_massive_vvod(arr, nomer);
+	//	First_min_last_max(arr, nomer); //https://stepik.org/lesson/106615/step/10?unit=81139
+	//	cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
+	//}
+	if (NUMBER == 29)
+	{
+		int MinRand = 2;
+		int MaxRand = 25;
+		const int nomer = 7;
+		int arr[nomer];
+		Print_massive_vvod(arr, nomer);
+		Palindrom_Arr(arr, nomer); //https://stepik.org/lesson/106615/step/13?unit=81139
+		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
+	}
+	if (NUMBER == 30)
+	{
+		int MinRand = 2;
+		int MaxRand = 25;
+		const int nomer = 7;
+		int arr[nomer];
+		Print_massive_vvod(arr, nomer);
+		Two_identical_elements_Arr(arr, nomer); //https://stepik.org/lesson/106612/step/3?unit=81136
+		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
+	}
 }
 
 

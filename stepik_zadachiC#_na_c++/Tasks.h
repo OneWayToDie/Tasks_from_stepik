@@ -28,3 +28,6 @@ int More_than_the_previous_one(int arr[], const int nomer);
 int Index(int arr[], const int nomer);
 int Umenbshenie_Arr(int arr[], const int nomer);
 int Raznostb_Arr(int arr[], const int nomer);
+//int First_min_last_max(int arr[], int nomer);
+int Palindrom_Arr(int arr[], const int nomer);
+int Two_identical_elements_Arr(int arr[], int nomer);

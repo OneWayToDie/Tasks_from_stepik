@@ -449,3 +449,44 @@ int Raznostb_Arr(int arr[], const int nomer)
 	cout << "Разность - " << raznostb << endl;
 	return nomer;
 }
+//int First_min_last_max(int arr[], const int nomer)
+//{
+//	int min = arr[0];
+//	int max = arr[0];
+//	int IndexMin;
+//	int IndexMax;
+//	for (int i = 0; i < nomer; i++)
+//	{
+//		if (arr[i] < min)
+//		{
+//			min = arr[i];
+//			IndexMin = i;
+//		}
+//		if (arr[i] >= max)
+//		{
+//			max = arr[i];
+//			IndexMax = i;
+//		}
+//
+//	}
+//	arr[IndexMax] = min;
+//	arr[IndexMin] = max;
+//
+//
+//	return nomer;
+//}
+int Palindrom_Arr(int arr[], const int nomer)
+{
+	bool sum = false;
+	for (int i = 0; i < nomer; i++)
+	{
+		arr[i] == arr[nomer - 1 - i] ? sum = true : sum = false;
+	}
+	sum == true ? cout << "YES" : cout << "NO";
+	cout << "\n";
+	return nomer;
+}
+int Two_identical_elements_Arr(int arr[], int nomer)
+{
+
+}
