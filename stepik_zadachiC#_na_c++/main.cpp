@@ -247,8 +247,6 @@ void main()
 	//}
 	if (NUMBER == 29)
 	{
-		int MinRand = 2;
-		int MaxRand = 25;
 		const int nomer = 7;
 		int arr[nomer];
 		Print_massive_vvod(arr, nomer);
@@ -259,7 +257,7 @@ void main()
 	{
 		int MinRand = 2;
 		int MaxRand = 25;
-		const int nomer = 7;
+		const int nomer = 5;
 		int arr[nomer];
 		Print_massive_vvod(arr, nomer);
 		Two_identical_elements_Arr(arr, nomer); //https://stepik.org/lesson/106612/step/3?unit=81136
