@@ -263,6 +263,16 @@ void main()
 		Two_identical_elements_Arr(arr, nomer); //https://stepik.org/lesson/106612/step/3?unit=81136
 		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
 	}
+	if (NUMBER == 30)
+	{
+		int MinRand = 2;
+		int MaxRand = 25;
+		const int nomer = 5;
+		int arr[nomer];
+		Print_massive_vvod(arr, nomer);
+		The_only_elements_are(arr, nomer); //https://stepik.org/lesson/106612/step/4?unit=81136
+		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
+	}
 }
 
 

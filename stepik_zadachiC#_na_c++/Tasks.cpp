@@ -488,7 +488,6 @@ int Palindrom_Arr(int arr[], const int nomer)
 }
 int Two_identical_elements_Arr(int arr[], int nomer)
 {
-	int cnt = 0;
 	bool sovpadenie = false;
 	for (int i = 0; i < nomer; i++)
 	{
@@ -503,4 +502,8 @@ int Two_identical_elements_Arr(int arr[], int nomer)
 	sovpadenie == true ? cout << "YES" : cout << "NO";
 	cout << "\n";
 	return nomer;
+}
+int The_only_elements_are(int arr[], const int nomer)
+{
+
 }
