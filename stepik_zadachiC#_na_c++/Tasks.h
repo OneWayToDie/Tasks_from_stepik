@@ -32,3 +32,4 @@ int Raznostb_Arr(int arr[], const int nomer);
 int Palindrom_Arr(int arr[], const int nomer);
 int Two_identical_elements_Arr(int arr[], int nomer);
 int The_only_elements_are(int arr[], const int nomer);
+void Diagonalb_arr(int arr[Rows][Cols], const int Rows, const int Cols);

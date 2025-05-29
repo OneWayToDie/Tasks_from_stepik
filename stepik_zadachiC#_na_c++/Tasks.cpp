@@ -524,3 +524,16 @@ int The_only_elements_are(int arr[], const int nomer)
 	cout << endl;
 	return nomer;
 }
+void Diagonalb_arr(int arr[Rows][Cols], const int Rows, const int Cols)
+{
+	for (int i = 0; i < Rows; i++)
+	{
+		for (int j = 0; j < Cols; j++)
+		{
+			if (i + j + 1 == 3) { arr[i][j] = 1; }
+			if (i + j + 1 > 3) { arr[i][j] = 2; }
+			if (i + j + 1 < 3) { arr[i][j] = 0; }
+		}
+	}
+	cout << endl;
+}

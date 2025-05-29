@@ -255,8 +255,6 @@ void main()
 	}
 	if (NUMBER == 30)
 	{
-		int MinRand = 2;
-		int MaxRand = 25;
 		const int nomer = 5;
 		int arr[nomer];
 		Print_massive_vvod(arr, nomer);
@@ -265,12 +263,17 @@ void main()
 	}
 	if (NUMBER == 31)
 	{
-		int MinRand = 2;
-		int MaxRand = 25;
 		const int nomer = 5;
 		int arr[nomer];
 		Print_massive_vvod(arr, nomer);
 		The_only_elements_are(arr, nomer); //https://stepik.org/lesson/106612/step/4?unit=81136
+		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
+	}
+	if (NUMBER == 32)
+	{
+		int arr[Rows][Cols];
+		Diagonalb_arr(arr, Rows,  Cols); //https://stepik.org/lesson/87058/step/12?unit=63454
+		Print_2D(arr, Rows, Cols);
 		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
 	}
 }

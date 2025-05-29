@@ -31,4 +31,17 @@ int Print_massive_random_int(int arr[], int nomer)
 	cout << endl;
 	return nomer;
 }
+void Print_2D(int arr[Rows][Cols], const int Rows, const int Cols)
+{
+	for (int i = 0; i < Rows; i++)
+	{
+		for (int j = 0; j < Cols; j++)
+		{
+			cout << arr[i][j] << "  ";
+		}
+		cout << "\n\n";
+	}
+	cout << endl;
+
+}
 
