@@ -549,3 +549,23 @@ void Pifagor_arr(int arr[pifagor][pifagor], const int pifagor)
 		cout << "\n\n";
 	}
 }
+void Pascale_Triangle_arr(int arr[pifagor][pifagor], const int pifagor)
+{
+	for (int i = 0; i < pifagor; i++)
+	{
+		for (int j = 0; j < pifagor; j++)
+		{
+			if (i == 0 || j == 0)
+			{
+				arr[i][j] = 1;
+				cout << "1 ";
+			}
+			else
+			{
+				arr[i][j] = arr[i][j - 1] + arr[i - 1][j];
+				cout << arr[i][j] << " ";
+			}
+		}
+		cout << "\n\n";
+	}
+}
