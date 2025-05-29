@@ -42,6 +42,4 @@ void Print_2D(int arr[Rows][Cols], const int Rows, const int Cols)
 		cout << "\n\n";
 	}
 	cout << endl;
-
 }
-

@@ -537,3 +537,15 @@ void Diagonalb_arr(int arr[Rows][Cols], const int Rows, const int Cols)
 	}
 	cout << endl;
 }
+void Pifagor_arr(int arr[pifagor][pifagor], const int pifagor)
+{
+	for (int i = 1; i <= pifagor; i++)
+	{
+		cout << "\n\n";
+		for (int j = 1; j <= pifagor; j++)
+		{
+			cout << i * j << "  ";
+		}
+		cout << "\n\n";
+	}
+}

@@ -276,6 +276,20 @@ void main()
 		Print_2D(arr, Rows, Cols);
 		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
 	}
+	//if (NUMBER == 33)
+	//{
+	//	int arr[Rows][Cols];
+	//	-||-(arr, Rows, Cols); //
+	//	Print_2D(arr, Rows, Cols);
+	//	cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
+	//}
+	if (NUMBER == 34)
+	{
+		cout << "Таблица Пифагора: " << "\n";
+		int arr[pifagor][pifagor];
+		Pifagor_arr(arr, pifagor); //https://stepik.org/lesson/87058/step/12?unit=63454
+		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
+	}
 }
 
 
