@@ -294,7 +294,7 @@ void main()
 	{
 		cout << "Треугольник Паскаля: " << "\n";
 		int arr[pifagor][pifagor];
-		Pascale_Triangle_arr(arr, pifagor); //https://stepik.org/lesson/87058/step/12?unit=63454
+		Pascale_Triangle_arr(arr, pifagor); //https://stepik.org/lesson/87058/step/15?unit=63454
 		cout << "Введите номер задачи, которую хотите проверить: "; cin >> NUMBER;
 	}
 }

@@ -2,6 +2,7 @@
 
 using namespace std;
 
+
 double Zadacha_433(int studenti, int ballbI)
 {
 	double sum = ballbI;
